@@ -5,10 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class OrderRequestDTO {
+@AllArgsConstructor
+public class StatusRequestDTO {
 
-    private Long amount;
+    private String orderId;
     private String orderInfo;
+    private String transactionNo;
+    private String transDate;
+    private Long amount;
 }
